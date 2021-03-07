@@ -1,0 +1,64 @@
+/* * { outline: 1px solid tomato; } */
+
+body {
+    background-color: #666;
+    font-family: sans-serif;
+    padding: 20px;
+}
+.newsletter {
+    width: 600px;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    margin-top: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.title-choose {
+    text-align: center;
+}
+
+.table-flags {
+    width: 100%;
+}
+
+img {
+    vertical-align: middle;
+}
+
+table {
+    border-spacing: 20px;
+}
+
+.table-flags a {
+    border: 2px solid lightgrey;
+    border-radius: 15px;
+    padding: 10px;
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* .table-flags a:hover {
+    background-color: tomato;
+} */
+
+.table-flags img {
+    margin-right: 10px;
+    width: 30px;
+}
+
+.headline img {
+    width: 200px;
+}

@@ -1,0 +1,25 @@
+body {
+    padding: 1rem;
+    font-family: sans-serif;
+    background-image: url('https://picsum.photos/1280/1024?grayscale');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* height: 100vh; */
+    min-height: 100vh;
+}
+
+section {
+    width: 50vw;
+    height: 50vh;
+    outline: 1px solid tomato;
+    background-image: url('https://www.placecage.com/1000/1000');
+    background-repeat: no-repeat;
+    /* background-position: 50% bottom; */
+    background-position: center;
+    background-size: cover;
+}
+
+section + section {
+    margin-top: 1rem;
+}

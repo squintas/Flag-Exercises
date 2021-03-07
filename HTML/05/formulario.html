@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <link rel="stylesheet" href="/reset.css">
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+
+    <div>
+        <h1>Formulário</h1>
+
+        <div class="wrapper">
+
+
+
+
+            <form action="formulario-sucesso.html" method="get">
+
+                <label for="nome">Primeiro e último nome *</label><br>
+                <input class="text-box" type="text" id="nome" placeholder="O seu nome" required>
+
+                <br>
+
+                <label for="idade">Idade</label><br>
+                <input class="text-box" type="number" id="idade">
+
+                <!-- <br>
+
+            <label for="email">Email *</label><br>
+            <input type="email" id="email" placeholder="O seu email" required> -->
+
+                <br>
+
+                <label for="sexo">Sexo</label><br>
+                <input type="radio" name="sexo" value="masculinho" id="sexo">
+                <span>Masculino</span><br>
+
+                <input type="radio" name="sexo" value="feminino" id="sexo">
+                <span>Feminino</span><br>
+
+                <input type="radio" name="sexo" value="outro" id="sexo">
+                <span>Outro</span>
+
+                <br>
+
+                <label for="password">Password</label><br>
+                <input class="text-box" type="password" id="password" placeholder="O sua password" required>
+
+                <br>
+
+                <label for="acesso">Tipo de acesso</label><br>
+                <input type="checkbox" value="smarphone" id="acesso">
+                <span>Smartphone</span><br>
+
+                <input type="checkbox" value="tablet" id="acesso">
+                <span>Tablet</span><br>
+
+                <input type="checkbox" value="desktop" id="acesso">
+                <span>Desktop</span>
+
+                <br>
+
+                <label for="hora">Hora de contacto</label><br>
+                <select class="text-box-hora" name="hora" id="hora" required>
+                <option value="" disabled>Escolha</option>
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+            </select>
+
+                <br>
+
+                <label for="comentario">Comentário</label><br>
+                <br>
+                <textarea name="comentario" id="comentario" cols="30" rows="10" placeholder="Deixe o seu comentário"></textarea>
+
+                <br>
+                <input class="btn-enviar" type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

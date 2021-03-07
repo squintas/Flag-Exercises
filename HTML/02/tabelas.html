@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table { outline: 1px solid tomato; }
+    </style>
+</head>
+<body>
+
+    <h1>Tabelas</h1>
+
+    <table width="100%">
+
+        <tr>
+            <th>Curso</th>
+            <th>Duração</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>HTML5</td>
+            <td>200h</td>
+            <td>1.200€</td>
+        </tr>
+        <tr>
+            <td>CSS3</td>
+            <td>900h</td>
+            <td>6.500€</td>
+        </tr>
+        <tr>
+            <td>Javascript ES6</td>
+            <td>4000h</td>
+            <td>50€</td>
+        </tr>
+    </table>
+
+    <h2>Tabela com colspan</h2>
+
+    <table width="100%">
+
+        <tr>
+            <th>Curso</th>
+            <th>Duração</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>HTML5</td>
+            <td>200h</td>
+            <td>1.200€</td>
+        </tr>
+        <tr>
+            <td>CSS3</td>
+            <td>900h</td>
+            <td>6.500€</td>
+        </tr>
+        <tr>
+            <td colspan="2">Javascript ES6</td>
+            <td>4000h</td>
+            <!-- <td>50€</td> -->
+        </tr>
+    </table>
+
+    <h2>Tabela com rowspan</h2>
+
+    <table width="100%">
+
+        <tr>
+            <th>Curso</th>
+            <th>Duração</th>
+            <th>Preço</th>
+        </tr>
+        <tr>
+            <td>HTML5</td>
+            <td>200h</td>
+            <td>1.200€</td>
+        </tr>
+        <tr>
+            <td>CSS3</td>
+            <td>900h</td>
+            <td rowspan="2">6.500€</td>
+        </tr>
+        <tr>
+            <td>Javascript ES6</td>
+            <td>4000h</td>
+            <!-- <td>50€</td> -->
+        </tr>
+    </table>
+
+    <h2>Tabela com imagens</h2>
+
+    <table>
+        <tr>
+            <td><img src="https://www.placecage.com/g/100/100" alt=""></td>
+            <td><img src="https://www.placecage.com/100/100" alt=""></td>
+            <td><img src="https://www.placecage.com/gif/100/100" alt=""></td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAG</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: lightblue;
+        }
+        h1, video, .controls {
+            margin: 20px;
+        }
+        button {
+            cursor: pointer;
+            border: 0;
+            padding: 20px;
+            border-radius: 5px;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: tomato;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1> Media javascript</h1>
+
+    <video src="../02/media/video.mp4"></video>
+    <audio src="../02/media/audio.mp3"></audio>
+
+    <!-- video -->
+    <div class="controls">
+
+        <button type="button" class="btn-play" onclick="play()">Play</button>
+
+        <button type="button" class="btn-pause" onclick="pause()">Pause</button>
+    </div>
+
+    <!-- audio -->
+    <div class="controls">
+
+        <button type="button" class="btn-play" onclick="play_audio()">Play audio</button>
+
+        <button type="button" class="btn-pause" onclick="pause_audio()">Pause audio</button>
+    </div>
+
+    <script>
+        console.log('Olá mundo!');
+
+        var video = document.querySelector('video');
+        var audio = document.querySelector('audio');
+
+        // controlar video
+        function play () {
+            console.log('Faz play! 😀');
+            video.play();
+        }
+
+        function pause () {
+            console.log('Faz pause! 😀');
+            video.pause();
+        }
+
+        // controlar audio
+        function play_audio () {
+            console.log('Faz play! 😀');
+            audio.play();
+        }
+
+        function pause_audio () {
+            console.log('Faz pause! 😀');
+            audio.pause();
+        }
+    </script>
+</body>
+</html>

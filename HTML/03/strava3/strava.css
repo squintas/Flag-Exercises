@@ -1,0 +1,84 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: grey;
+    padding: 50px 0;
+}
+div {
+    width: 700px;
+    background-color: #fff;
+    /* margin-left: 100px; */
+    /* margin: 50px 0 0 100px; */
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.spacerXXX {
+    margin-top: 10px;
+}
+
+hr {
+    /* opacity: 0; */
+    /* border-color: grey; */
+    border-width: 0;
+    outline: 1px solid tomato;
+
+}
+
+.logo-strava {
+    width: 130px;
+}
+
+.icon-like {
+    width: 55px;
+}
+
+.mapa {
+    width: 615px;
+    border-radius: 5px;
+}
+
+.logo-strava-dark {
+    width: 115px;
+}
+
+.icon-social {
+    width: 55px;
+}
+
+.btn-cta {
+    padding: 20px 40px;
+    text-transform: uppercase;
+    background-color: #fc6100;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 70px 0 15px 0;
+    border: 3px solid #fc6100;
+    width: 195px;
+}
+
+.btn-actividade {
+    font-weight: bold;
+    padding: 20px 40px;
+    text-decoration: none;
+    border: 3px solid #fc6100;
+    border-radius: 5px;
+    color: #fc6100;
+    display: inline-block;
+    margin-bottom: 60px;
+    width: 195px;
+}
+
+a { text-decoration: none; }
+
+.btn-cancelar {
+    text-decoration: underline;
+    color: blue;
+}
+
+span {
+    color: blue;
+}
