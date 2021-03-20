@@ -1,0 +1,33 @@
+* {
+    outline: 1px dashed tomato;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 1rem;
+}
+
+.wrapper {
+    display: flex;
+    gap: 1rem;
+}
+
+img {
+    width: 100%;
+}
+
+section {
+    flex-shrink: ;
+    /* overflow: hidden; */
+    /* flex-shrink */
+    /* flex-grow */
+    /* Flex-basis */
+}
+
+section:first-of-type {
+    flex-grow: 2;
+}
+
+section:nth-of-type(2) {
+    flex-basis: 1;
+}

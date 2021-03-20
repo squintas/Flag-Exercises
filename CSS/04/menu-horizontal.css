@@ -1,0 +1,59 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(to right bottom, gold, deeppink);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    padding: 1rem;
+    background: #fff;
+    display: inline-block;
+    outline: none;
+    white-space: nowrap;
+}
+
+a:hover,
+a:focus {
+    background-color: yellowgreen;
+}
+
+li {
+    float: left;
+    position: relative;
+}
+
+.subnav {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+
+li:hover .subnav {
+    display: block;
+}
+
+.nav > li + li {
+    margin-left: 2px;
+}
+
+li:focus-within ul {
+    display: block;
+}
+
+.icon-minus {
+    display: none;
+}
+
+/* Toggle show/hide with active class */
+.active .icon-plus {
+    display: none;
+}
+.active .icon-minus {
+    display: inline;
+}

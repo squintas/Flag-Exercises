@@ -1,0 +1,44 @@
+body {
+    font-family: sans-serif;
+    padding: 2rem;
+}
+
+
+/* Tudo o que está dentro do Body  */
+
+body>* {
+    background-color: tomato;
+    color: #fff;
+    padding: 1rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+    outline: 3px dashed yellowgreen;
+}
+
+
+/* Todos os elementos que estão percedidos por outros */
+
+*+* {
+    margin-top: 1rem;
+}
+
+
+/* ALterar propriedade Display */
+
+h1,
+p,
+section,
+div {
+    display: inline-block;
+}
+
+link,
+span,
+img {
+    display: block;
+}

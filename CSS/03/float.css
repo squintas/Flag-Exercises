@@ -1,0 +1,26 @@
+* { outline: 1px dashed tomato; }
+
+p {
+    background-color: deeppink;
+    padding: 1rem;
+    color: #fff;
+    overflow: hidden;
+}
+
+img {
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.col {
+    width: 30vw;
+    float: left;
+}
+
+.col + .col {
+    margin-left: 1rem;
+}

@@ -1,0 +1,40 @@
+* { outline: 1px solid tomato; }
+body {
+    font-family: sans-serif;
+    padding: 1rem;
+    --cor1: #a9e2ea;
+    --cor2: #f7c8ab;
+    --cor3: #fee8b4;
+    --cor4: #d4f2c4;
+    text-align: center;
+    padding: 1rem;
+    font-family: sans-serif;
+    background-color: #eaeaea;
+    display: flex;
+    height: 100vh;
+
+    /* justify-content: center; */
+    /* align-items: center; */
+
+    background: linear-gradient(
+        to right,
+        var(--cor1) 20%,
+        var(--cor2) 0,
+        var(--cor2) 80%,
+        var(--cor3) 0
+    );
+}
+h1 {
+    /* clamp(min, ideal, max) */
+    /* font-size: 5vw; */
+    font-size: clamp(2rem, 1rem + 8vw , 9rem);
+    margin: auto;
+    text-shadow: 10px 10px 0 var(--cor1),
+    20px 20px 0 var(--cor4);
+    /* transform: rotate(15deg); */
+    font-weight: bold;
+    transform: skewY(-15deg);
+}
+h1:hover {
+    transform: skewY(15deg);
+}

@@ -1,0 +1,15 @@
+body {
+    font-family: sans-serif;
+}
+
+p {
+    width: 40vw;
+    height: 300px;
+    background-color: rgb(255, 178, 185);
+    padding: 1rem;
+    font-size: 4rem;
+    /* overflow: scroll; */
+    /* overflow: auto; */
+    overflow-y: hidden;
+    overflow-x: scroll;
+}

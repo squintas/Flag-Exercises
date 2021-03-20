@@ -1,0 +1,42 @@
+/* * { outline: 1px dashed tomato; } */
+
+.wrapper {
+    padding: 1rem;
+    background-color: #eaeaea;
+    min-height: 25vh;
+    display: flex;
+    /* Eixo principal */
+    justify-content: flex-start;
+    /* Eixo secundário */
+    align-items: flex-start;
+    gap: 1rem;
+
+}
+h1{ margin: 0; }
+h2 { margin: 2rem 0 1rem 0; }
+
+a {
+    text-decoration: none;
+    padding: 1rem;
+    text-transform: uppercase;
+    background-color: lightcoral;
+    color: inherit;
+}
+
+.w2 {
+    align-items: flex-end;
+}
+
+.w3 {
+    align-items: center;
+}
+
+.w4 {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.w5 {
+    align-items: center;
+    justify-content: space-evenly;
+}

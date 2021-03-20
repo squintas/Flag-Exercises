@@ -1,0 +1,54 @@
+body {
+    padding: 1rem;
+    font-family: sans-serif;
+    --w: 200px;
+}
+section {
+    width: var(--w);
+    height: var(--w);
+    background-color: #eaeaea;
+}
+h2 {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.col div {
+    width: var(--w);
+    height: var(--w);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-origin: bottom right;
+}
+
+.transform-translate {
+    transform: translate(10px, 30px);
+    background-color: rgba(154, 205, 50, .4);
+}
+.transform-rotate {
+    transform: rotate(15deg);
+    background-color: rgba(50, 117, 205, 0.5);
+}
+.transform-scale {
+    transform: scale(.9);
+    background-color: rgba(174, 50, 205, 0.5);
+}
+.transform-skew {
+    transform: skew(-15deg);
+    background-color: rgba(174, 50, 205, 0.5);
+}
+.transform-skewy {
+    transform: skewY(15deg);
+    background-color: rgba(205, 161, 50, 0.5);
+}
+.transform-multiple {
+    transform: rotate(45deg) scale(2);
+    background-color: rgba(50, 205, 202, 0.5);
+}
+
+.wrapper {
+    margin-top: 1rem;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}

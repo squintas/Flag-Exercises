@@ -1,0 +1,58 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #eaeaea;
+}
+
+footer {
+    padding: 2rem;
+    background-color: #fff;
+    /* position: absolute; */
+    position: fixed;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .8);
+    bottom: 0;
+    width: 100%;
+}
+
+button {
+    padding: 5px 30px;
+    background-color: yellowgreen;
+    border border-radius: 5px;
+    border: 0;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+button:hover {
+    background-color: deeppink;
+}
+
+
+/* É o que acontece quando se carrega na tecla "TAB" */
+
+button:focus {
+    outline: 2px dashed deeppink;
+    outline-offset: 3px;
+}
+
+.card {
+    padding: 1rem;
+    background-color: lightsalmon;
+    margin-bottom: 1rem;
+    text-align: left;
+    min-height: 220px;
+    position: relative;
+}
+
+a {
+    background-color: deeppink;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 1rem;
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+}

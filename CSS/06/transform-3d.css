@@ -1,0 +1,19 @@
+* { outline: 1px solid tomato; }
+body {
+    text-align: center;
+    padding: 1rem;
+    font-family: sans-serif;
+    background-color: #eaeaea;
+}
+h1 {
+    margin-bottom: 1rem;
+}
+div {
+    perspective: 300px;
+    transform-style: preserve-3d;
+}
+img {
+    backface-visibility: hidden;
+    transform: rotateY(15deg);
+    border-radius: 8px;
+}
