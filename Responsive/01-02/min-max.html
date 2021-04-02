@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLAG</title>
+    <link rel="stylesheet" href="../../../FLAG-CSS/aulas/reset.css">
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            padding: 1rem;
+            font-family: sans-serif;
+        }
+        p {
+            background-color: lightblue;
+            padding: 1rem;
+            max-width: 800px;
+        }
+        img {
+            /* width: 100%; */
+            /* max-width: 800px; */
+            width: min(800px, 100%);
+            /* width: clamp(100px, 50vw, 800px); */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>min() &amp; max()</h1>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum mollitia delectus soluta eligendi accusantium incidunt distinctio qui, quas minima cumque repudiandae ut, accusamus tempore nulla atque iste corporis voluptate porro?</p>
+    <!-- <img src="https://picsum.photos/1280/900?grayscale" alt="art"> -->
+
+    <h2>Picture</h2>
+    <picture>
+        <source srcset="https://www.placecage.com/g/600/300" media="(max-width: 600px)">
+        <source srcset="https://picsum.photos/1000/600" media="(max-width: 1000px)">
+        <img src="https://picsum.photos/500/800?grayscale" alt="">
+    </picture>
+</body>
+</html>

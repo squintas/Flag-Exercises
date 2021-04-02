@@ -1,0 +1,108 @@
+        body {
+            background-color: #eaeaea;
+            animation-iteration-count: infinite;
+        }
+        
+        .banner {
+            width: 300px;
+            height: 250px;
+            background-color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .banner .tempo1 {
+            background-color: #00c7c7;
+            width: 100%;
+            height: 100%;
+            animation: slideintop 1s;
+        }
+        
+        .banner img {
+            position: absolute;
+        }
+        
+        .tempo1 .linha {
+            left: 0;
+            bottom: 0;
+            animation: fadein 1s 3.5s backwards;
+        }
+        
+        .tempo1 .texto {
+            left: 83px;
+            top: 78px;
+            animation: fadein 1s 3s backwards, scaleinrotate 1s 3s backwards cubic-bezier(.1, .7, .48, 1.84);
+        }
+        
+        .tempo1 .logo {
+            left: 10px;
+            top: 10px;
+            animation: fadein 1s 2s backwards, slideinleft 1s 2s backwards ease;
+        }
+        /* Animation tempo 1 */
+        
+        @keyframes slideintop {
+            from {
+                transform: translateY(-250px);
+            }
+            to {
+                transform: translateY(0);
+            }
+        }
+        
+        @keyframes fadein {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideinleft {
+            from {
+                transform: translateX(-300px);
+            }
+            to {
+                transform: translateX(0);
+            }
+        }
+        
+        @keyframes scaleinrotate {
+            from {
+                transform: scale(0) rotate(360deg);
+            }
+            to {
+                transform: scale(1) rotate(0);
+            }
+        }
+        /* Tempo 2 (2ª parte) */
+        
+        .tempo2 {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #fff;
+            /* opacity: 0; */
+            animation: slideintop 1s 6.5s backwards ease, fadein 1s 6.5s backwards ease;
+        }
+        
+        .tempo2 .logo {
+            top: 10px;
+            left: 10px;
+            animation: slideinleft 1s 7.5s backwards ease;
+        }
+        
+        .tempo2 .linha {
+            top: 0;
+            right: 10px;
+            animation: slideinleft 1s 9.5s backwards ease;
+        }
+        
+        .tempo2 .texto {
+            top: 63px;
+            left: 14px;
+            animation: slideinleft 1s 8.5s backwards ease;
+        }

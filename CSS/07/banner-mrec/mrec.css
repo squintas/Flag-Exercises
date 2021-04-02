@@ -1,0 +1,123 @@
+:root {
+    /* intro */
+    --tempo-intro-bg: .8s;
+    --tempo-intro-linhas: .3s;
+    --tempo-intro-logo: .5s;
+    --tempo-intro-teaser: 1s;
+    --tempo-delay-logo: var(--tempo-intro-bg);
+    --tempo-delay-linhas: calc(var(--tempo-delay-logo) + var(--tempo-intro-logo));
+    --tempo-delay-teaser: calc(var(--tempo-delay-linhas) + var(--tempo-intro-linhas));
+
+    /* end */
+    --tempo-end-bg: var(--tempo-intro-bg);
+    --tempo-end-logo: var(--tempo-intro-logo);
+    --tempo-end-textos: var(--tempo-intro-teaser);
+    --tempo-end-linhas: var(--tempo-intro-linhas);
+    --tempo-delay-bg-end: calc(var(--tempo-delay-teaser) + 3s);
+    --tempo-delay-logo-end: calc(var(--tempo-delay-bg-end) + var(--tempo-end-bg));
+    --tempo-delay-linhas-end: calc(var(--tempo-delay-logo-end) + var(--tempo-end-logo));
+    --tempo-delay-textos-end: calc(var(--tempo-delay-linhas-end) + var(--tempo-end-linhas));
+}
+
+body {
+    background-color: #d1d1d1;
+}
+
+.mrec {
+    margin: 0 auto;
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.mrec > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.mrec > div * {
+    position: absolute;
+}
+
+/* intro */
+.mrec .intro {
+    background-color: #02c5c7;
+    animation: intro-bg-in var(--tempo-intro-bg) cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+
+.mrec .intro .logo {
+    top: 10px;
+    left: 10px;
+    animation: intro-logo-in var(--tempo-intro-logo) cubic-bezier(0.23, 1, 0.32, 1) var(--tempo-delay-logo) both;
+}
+
+.mrec .intro .linhas {
+    left: 0;
+    bottom: 0;
+    animation: intro-linhas-in var(--tempo-intro-linhas) ease-out both var(--tempo-delay-linhas);
+}
+
+.mrec .intro .teaser {
+    top: 102px;
+    left: 85px;
+    animation: intro-teaser-in var(--tempo-intro-teaser) cubic-bezier(0.175, 0.885, 0.32, 1.275) var(--tempo-delay-teaser) both;
+}
+
+/* end */
+.mrec .end {
+    /* display: none; */
+    background-color: #fff;
+    animation: end-bg-in var(--tempo-end-bg) cubic-bezier(0.23, 1, 0.32, 1) var(--tempo-delay-bg-end) both;
+}
+
+.mrec .end .linhas {
+    top: 0;
+    right: 0;
+    animation: end-linhas-in var(--tempo-end-linhas) ease-out var(--tempo-delay-linhas-end) both;
+}
+
+.mrec .end .logo {
+    top: 10px;
+    left: 10px;
+    animation: end-logo-in var(--tempo-end-logo) cubic-bezier(0.23, 1, 0.32, 1) var(--tempo-delay-logo-end) both;
+}
+
+.mrec .end .textos {
+    left: 10px;
+    top: 57px;
+    animation: end-textos-in var(--tempo-end-textos) cubic-bezier(0.23, 1, 0.32, 1) var(--tempo-delay-textos-end) both;
+}
+
+/* animações */
+/* intro */
+@keyframes intro-bg-in {
+    from { transform: translateY(-250px); }
+}
+@keyframes intro-logo-in {
+    from { transform: translateY(-50px); }
+}
+@keyframes intro-linhas-in {
+    from { transform: translateX(-50px); }
+}
+@keyframes intro-teaser-in {
+    from { transform: scale(0); opacity: 0; }
+}
+
+/* end */
+@keyframes end-bg-in {
+    from { transform: translateY(-250px); opacity: 0; }
+}
+@keyframes end-logo-in {
+    from { transform: translateY(-50px); opacity: 0; }
+}
+@keyframes end-linhas-in {
+    from { transform: translateY(-50px); opacity: 0; }
+}
+@keyframes end-textos-in {
+    from { transform: translateX(-300px); opacity: 0; }
+}

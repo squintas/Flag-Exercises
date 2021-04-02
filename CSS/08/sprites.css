@@ -1,0 +1,24 @@
+body {
+    font-family: sans-serif;
+    padding: 1rem;
+}
+
+a {
+    text-decoration: none;
+    width: 193px;
+    height: 50px;
+    /* background-color: tomato; */
+    display: inline-block;
+    background-image: url('global-images.png');
+    background-repeat: no-repeat;
+    background-position: -9px -17px;
+    /* outline: 1px solid tomato; */
+}
+img {
+    opacity: .1;
+}
+a:hover,
+a:focus {
+    background-position: -211px -17px;
+}
+[aria-hidden] { opacity: 0; }

@@ -1,0 +1,150 @@
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .header {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 1fr;
+        grid-template-columns: 2fr 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+  }
+  .header__hero {
+    grid-row: span 2;
+  }
+  .header__cta1, .header__cta2 {
+    display: -ms-grid;
+    display: grid;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .container {
+    display: -ms-grid;
+    display: grid;
+    gap: 10px;
+  }
+  .container .menu {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .container .menu_btn {
+    display: none;
+  }
+  .container .menu__list {
+    display: -ms-grid;
+    display: grid;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 1px dashed tomato;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.menu_btn {
+  background-color: tomato;
+  padding: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.menu a {
+  background-color: tomato;
+  padding: 10px;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+.menu__list {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+  -ms-grid-columns: (minmax(120px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  margin-bottom: 10px;
+  display: none;
+}
+
+.menu__list.active {
+  display: -ms-grid;
+  display: grid;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+}
+
+.header h1,
+.header p,
+.header aside {
+  background-color: tomato;
+  padding: 1rem;
+}
+
+.header .header__hero {
+  background-image: url("https://static.pexels.com/photos/255934/pexels-photo-255934.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 1rem;
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 10px;
+}
+
+.header h2 {
+  font-size: 4rem;
+  font-weight: 100;
+}
+
+.header aside {
+  text-align: center;
+}
+
+.header aside p {
+  font-size: 1.5rem;
+  padding: 0;
+}
+/*# sourceMappingURL=bicicletas-tomato.css.map */

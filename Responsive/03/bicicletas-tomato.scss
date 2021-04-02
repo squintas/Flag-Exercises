@@ -1,0 +1,111 @@
+// Imports
+@import "media-queries";
+
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+    outline: 1px dashed tomato;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+// Vars
+$cor-principal: tomato;
+
+
+body {
+    font-family: sans-serif;
+    padding: 1rem;
+}
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.menu {
+    &_btn {
+        background-color: $cor-principal;
+        padding: 1rem;
+        text-transform: uppercase;
+        color: #fff;
+        border: 0;
+        cursor: pointer;
+        margin-bottom: 10px;
+    }
+
+    a {
+        background-color: $cor-principal;
+        padding: 10px;
+        text-transform: uppercase;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+
+    li {
+        // flex: 1;
+    }
+
+    &__list {
+        // display: flex;
+        // flex-wrap: wrap;
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr) );
+        margin-bottom: 10px;
+        display: none;
+
+        &.active {
+            display: grid;
+        }
+    }
+
+}
+
+.header {
+
+    display: grid;
+    gap: 10px;
+
+    h1,
+    p,
+    aside {
+        background-color: $cor-principal;
+        padding: 1rem;
+    }
+
+    .header__hero {
+        background-image: url("https://static.pexels.com/photos/255934/pexels-photo-255934.jpeg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 1rem;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    h2 {
+        font-size: 4rem;
+        font-weight: 100;
+    }
+
+    aside {
+        text-align: center;
+        p {
+            font-size: 1.5rem;
+            padding: 0;
+        }
+    }
+}

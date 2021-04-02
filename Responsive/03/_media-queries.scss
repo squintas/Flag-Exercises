@@ -1,0 +1,35 @@
+/* Landscape */
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    .header {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        &__hero {
+            grid-row: span 2;
+        }
+
+        &__cta1,
+        &__cta2 {
+            display: grid;
+            align-content: center;
+        }
+    }
+    .container {
+        display: grid;
+        gap: 10px;
+
+        .menu {
+            order: 2;
+        }
+        .menu_btn {
+            display: none;
+        }
+        .menu__list {
+            display: grid;
+        }
+    }
+}
