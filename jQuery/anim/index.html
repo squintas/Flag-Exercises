@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<button>Start</button>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+
+
+  $("button").click(function(){
+    $("div")
+    .animate({left: '250px'})
+    .animate({opacity: '0.5'})
+    .animate({height: '150px'})
+    .animate({width: '150px'})
+    .toggle(300);
+    });
+
+});
+</script> 
+</body>
+</html>

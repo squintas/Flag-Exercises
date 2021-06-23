@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+}
+
+.wrapper {
+    min-height: 90vh;
+    background-color: deeppink;
+    width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+    border-radius: 1%;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+form input {
+    height: 40px;
+    /* border-radius: 9%; */
+    border: none;
+    margin: 5px;
+    border: 1px solid darkgrey;
+}
+
+table td {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid grey;
+}
+
+table {
+    margin: 0 auto;
+}
+
+#addButton,
+#changeButton {
+    height: 44px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#addButton:hover,
+#changeButton:hover {
+    background-color: white;
+}

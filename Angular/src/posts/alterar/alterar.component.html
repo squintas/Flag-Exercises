@@ -1,0 +1,10 @@
+<p>alterar works! {{ pk }}</p>
+
+<div *ngIf="pk>=1 && pk<=2; else elseBlock">
+    <h3>Indice Valido</h3>
+
+
+</div>
+<ng-template #elseBlock>
+    <h3>Indice inValido</h3>
+</ng-template>

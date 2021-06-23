@@ -1,0 +1,11 @@
+.acordeon p{
+    display: none;
+}
+
+.acordeon .displayAnswer{
+    display:block;
+}
+.acordeon section:hover{
+    cursor: pointer;
+}
+

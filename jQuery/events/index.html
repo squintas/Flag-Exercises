@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        td{
+            padding: 10px;
+        }
+    </style>
+</head>
+<body style="font-family: 'Open sans', Arial, sans-serif;">
+    <form>
+    <table>
+        <tr>
+            <td>First Name</td>
+            <td>
+                <input id="txtFirstName" type="text" class="inputRequired" />
+            </td>
+        </tr>
+        <tr>
+            <td>Last Name</td>
+            <td>
+                <input id="txtLastName" type="text" class="inputRequired" />
+            </td>
+        </tr>
+        <tr>
+            <td>Favorite TV Show</td>
+            <td>
+                <select id="ddlTvShow" class="inputRequired">
+                    <option value="">Select</option>
+                    <option value="GOT">Game of Thrones</option>
+                    <option value="TWD">The Walking Dead</option>
+                    <option value="WV">WandaVision</option>
+                    <option value="Frds">Friends</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Favourite Pizza Topping</td>
+            <td>
+                <input id="radioCheese" name="topping" type="radio" value="cheese" class="inputRequired" /><label for="radioCheese">Plain Cheese</label>
+                <input id="radioPepperoni" name="topping" type="radio" value="pepperoni" class="inputRequired" /><label for="radioPepperoni">Pepperoni</label>
+                <input id="radioPineapple" name="topping" type="radio" value="pineapple" class="inputRequired" /><label for="radioPineapple">Pineapple</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Contact Method</td>
+            <td>
+                <input id="chkBoxEmail" type="checkbox" value="Email"
+                        class="inputRequired" /><label for="chkBoxEmail">Email</label>
+                <input id="chkBoxPhone" type="checkbox" value="Phone"
+                        class="inputRequired" /><label for="chkBoxPhone">Phone</label>
+                <input id="chkBoxSocialMedia" type="checkbox" value="Social Media"
+                        class="inputRequired" /><label for="chkBoxSocialMedia">Social Media</label>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Comments
+            </td>
+            <td>
+                <textarea id="txtComments" class="inputRequired"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="btnSubmit" type="submit" value="Submit" />
+            </td>
+            <td>
+                <div id="divResult"></div>
+            </td>
+        </tr>
+    </table>
+</form>
+
+<style>
+    #container .item:nth-child(odd){
+        background-color: aquamarine;
+    }
+    
+</style>
+
+<div id="container">
+    <ul>
+        <li>Item</li>
+        <li>Item</li>
+    </ul>
+</div>
+
+  
+
+      
+      <!--form onclick="alert('form')">FORM
+        <div onclick="alert('div')">DIV
+          <p onclick="alert('p')">P</p>
+        </div>
+      </form-->
+
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+    <script>
+
+        $(function () {
+
+
+            /*
+
+            $('#ddlTvShow').change(function () {
+                var selectedValue = $(this).val();
+                if (selectedValue == ""){
+                    selectedValue = "Please select a favorite TV show!";
+                }
+                $('#divResult').html(selectedValue);
+
+
+            });
+
+
+            $('#divResult').on('mouseenter',function(){
+                console.log($('#txtFirstName').val());
+            });
+
+
+            
+           
+
+            $('#btn').on('click',{title: "XPTB"}, minhaFuncao);
+
+            function minhaFuncao(event){
+                console.log($(this).data('title'));
+                console.log(event.data.title);
+
+
+
+                        "Event = " + e.type +
+                        "<br/> X = " + e.pageX +
+                        "<br/>Y = " + e.pageY + 
+                        "<br/>Target Type = " + e.target.type + //HTMLOBJECT
+                        "<br/>Target Tag Name = " + e.target.tagName; //DIV
+            }
+            */
+
+            
+            for(var i=0; i<10; i++){
+                $('ul').append('<li>Botao '+i+'</li>');
+            } 
+
+
+            $('ul').delegate('li','click',function(){
+                $(this).fadeOut(500);
+            });
+
+
+
+        });
+
+        
+    
+    </script>
+    
+</body>
+</html>

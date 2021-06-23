@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    div.item {
+        border: 1px solid #ccc;
+        border-radius: 20px;
+        padding: 40px;
+        margin: 10px;
+    }
+</style>
+
+<body>
+
+    <h1>
+        Bem-vindos ao jQuery!
+    </h1>
+
+    <section>
+
+        <p>
+            Vê a lista de sabores dos gelados do Santini aqui abaixo:
+        </p>
+
+        <div class="item js-item">
+            Framboesa
+        </div>
+        <div class="item js-item">
+            Chocolate
+        </div>
+        <div class="item js-item" id="stop">
+            Noz
+        </div>
+        <div class="item js-item">
+            Doce de leite
+        </div>
+        <div class="item js-item">
+            Bolacha Maria
+        </div>
+
+        <p>Vê aqui outros sabores:</p>
+        <ul>
+            <li data-title="Brigadeiro">Maçã verde</li>
+            <li data-title="Ananás">Morango</li>
+            <li data-title="Creme imperial">Laranja</li>
+            <li data-title="Canela">Avelã</li>
+            <li data-title="Tangerina">Nata</li>
+            <li data-title="Chocolate branco">Manga</li>
+            <li data-title="Kiwi">Limão</li>
+        </ul>
+
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,10 @@
+<p>O Componente Server criado individualmente funciona!</p>
+
+
+<h2>Passing and using data with event binding:</h2>
+
+<input type="text" [(ngModel)]="username">
+
+<p> {{ username }} </p>
+
+<button (click)="username = '' " [disabled]="username === ''">Reset</button>

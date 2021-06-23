@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .galeria{
+            width:540px;
+            font-family:Arial, Helvetica, sans-serif;
+            overflow:hidden;
+        }
+        ul{
+            display: flex;
+            justify-content: space-between;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+        li{
+            list-style: none;
+            cursor: pointer;
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        img{
+            box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+        }
+
+        .active{
+            border: 5px solid red;
+        }
+
+        .nav-buttons{
+            display: flex;
+            justify-content: space-between;
+        }
+        .btn{
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .img-container{
+            display: flex;
+            position: relative;
+        }
+            
+
+    </style>
+</head>
+<body>
+    <section class="galeria">
+        <div class="img-container js-img-container">
+        </div>
+        <div class="navigation">
+            <ul></ul>
+            <div class="nav-buttons">
+                <div class="btn js-prev">PREV</div>
+                <div class="btn js-next">NEXT</div>
+            </div>
+        </div>
+    </section>
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
